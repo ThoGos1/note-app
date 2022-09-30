@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    background: rgb(255, 255, 255);
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  article {
+    width: clamp(200px, 50%, 600px);
+  }
