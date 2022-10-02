@@ -1,0 +1,22 @@
+<div *ngIf="notePost$ | async as notePost">
+
+    <pre>
+        {{ notePost | json }}
+    </pre>
+    
+
+    <div>
+        <h2> {{ notePost.fields.title }} </h2>
+        <div [innerHtml]="notePost.fields.content | toHtml"></div>
+        <img [src]="notePost.fields.imagefil.fields.file.url" style="width: 150px;">
+
+
+
+
+    </div>
+
+    {{ notePost.fields.content | toHtml }}
+
+    <ngx-contentful-rich-text [document]="document"></ngx-contentful-rich-text>
+
+</div>

@@ -1,0 +1,12 @@
+<div *ngIf="notePosts$ | async as notePosts">
+    
+    <!-- {{ notePosts | json }} -->
+
+
+    <div *ngFor="let notePost of notePosts.items">
+        <h2> {{ notePost.fields.title }} </h2>
+        <a [routerLink]="[notePost.sys.id]"> go to note </a>
+    </div>
+
+
+</div>
